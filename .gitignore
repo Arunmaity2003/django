@@ -1,0 +1,30 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+ENV/
+env/
+.venv/
+
+# SQLite database (if you don’t want to track DB data in Git)
+db.sqlite3
+
+# Django stuff
+*.log
+*.pot
+*.pyc
+*.mo
+*.swp
+staticfiles/
+media/
+
+# VS Code settings
+.vscode/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
