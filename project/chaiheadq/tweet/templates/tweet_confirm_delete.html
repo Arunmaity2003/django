@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block title %}
+this is the index page
+{% endblock %}
+
+
+{% block content %}
+    <h1 class='text-center text-white '>Are you sure to delete the tweet?</h1>
+    <form method="post" class='d-flex gap-2 justify-content-center'>
+        {% csrf_token %}
+        <button class="btn btn-danger">Delete</button>
+        <a class="btn btn-success" href="{% url 'tweet_list' %}">Cancel</a>
+    </form>
+{% endblock %}
